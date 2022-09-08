@@ -1,6 +1,7 @@
 package ru.sladkkov.leetcodetasks;
 
 public class PalindromeNumber9 {
+
     /*
     Runtime: 29 ms, faster than 11.19% of Java online submissions for Palindrome Number.
     Memory Usage: 47 MB, less than 10.87% of Java online submissions for Palindrome Number.
@@ -14,7 +15,10 @@ public class PalindromeNumber9 {
     Memory Usage: 44.6 MB, less than 53.41% of Java online submissions for Palindrome Number.
     */
     public static boolean secondSolution(int x) {
-        if (x < 0) return false;
+
+        if (x < 0) {
+            return false;
+        }
 
         int digit = x;
         int reverse = 0;
@@ -33,8 +37,13 @@ public class PalindromeNumber9 {
     Memory Usage: 41.6 MB, less than 95.21% of Java online submissions for Palindrome Number.
     */
     public static boolean thirdSolution(int x) {
-        if (x >= 0 && x < 10) return true;
-        if (x < 0) return false;
+
+        if (x >= 0 && x < 10) {
+            return true;
+        }
+        if (x < 0) {
+            return false;
+        }
 
         int digit = x;
         int reverse = 0;
@@ -49,16 +58,19 @@ public class PalindromeNumber9 {
         return x == reverse;
     }
 
-    public static boolean fouthSolution(int x) {
+    public static boolean forthSolution(int x) {
+
         if (x < 0 || (x % 10 == 0 && x != 0)) {
             return false;
         }
 
         int revertedNumber = 0;
+
         while (x > revertedNumber) {
             revertedNumber = revertedNumber * 10 + x % 10;
             x /= 10;
         }
-        return x == revertedNumber || x == revertedNumber/10;
+
+        return x == revertedNumber || x == revertedNumber / 10;
     }
 }

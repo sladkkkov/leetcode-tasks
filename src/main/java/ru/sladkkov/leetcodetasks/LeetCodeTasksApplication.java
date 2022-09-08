@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class LeetCodeTasksApplication {
 
     public static void main(String[] args) {
-        System.out.println(PalindromeNumber9.secondSolution(121));
+        PalindromeNumber9.secondSolution(121);
 
     }
 
