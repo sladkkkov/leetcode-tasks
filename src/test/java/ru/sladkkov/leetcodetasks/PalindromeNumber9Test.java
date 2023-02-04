@@ -1,6 +1,7 @@
 package ru.sladkkov.leetcodetasks;
 
 import org.junit.jupiter.api.Test;
+import ru.sladkkov.leetcodetasks.task.PalindromeNumber9;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -34,7 +35,7 @@ class PalindromeNumber9Test {
     }
 
     @Test
-    void fouthSolution() {
+    void fourthSolution() {
         assertTrue(PalindromeNumber9.forthSolution(121));
         assertTrue(PalindromeNumber9.forthSolution(111));
         assertFalse(PalindromeNumber9.forthSolution(1231));

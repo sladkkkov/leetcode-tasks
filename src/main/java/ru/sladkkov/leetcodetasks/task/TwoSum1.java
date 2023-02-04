@@ -1,4 +1,4 @@
-package ru.sladkkov.leetcodetasks;
+package ru.sladkkov.leetcodetasks.task;
 
 import java.util.*;
 
